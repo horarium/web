@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://horarium.io"><img src="https://storage.cloud.google.com/horarium-static/assets/vector/default-monochrome-black.svg" alt="Markdownify" width="150"></a>
+  <a href="http://horarium.io"><img src="https://storage.googleapis.com/horarium-static/assets/vector/default-monochrome-black.svg" alt="horarium" width="300"></a>
   <br>
   horarium web
   <br>
@@ -17,9 +17,9 @@
 </p>
 
 <p align="center">
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#development">Development</a> •
-  <a href="#credits">Credits</a> •
+  <a href="#how-to-use-">How To Use</a> •
+  <a href="#development-">Development</a> •
+  <a href="#credits-">Credits</a> •
 </p>
 
 ## How To Use 🚀
@@ -31,3 +31,4 @@ npm install && npm start
 All contributions should be submitted as PRs
 
 ## Credits 📭
+TBA
