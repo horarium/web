@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+
+/* Master Styles */
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: #14D9D9;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+p {
+    color: #fff;
+    font-family: 'Montserrat', Arial, Helvetica;
+}
+body {
+  background-color: #44158F;
+  margin: 0;
+  overflow: hidden;
+}
+input[text], button {
+  color: #888;
+  font-family: 'Montserrat', Georgia;
+}
+a {
+  cursor: pointer;
+  cursor: hand;
+}
+button {
+  font-family: 'Montserrat', Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+label {
+  padding-right: 0.5em;
+}
+/* Navigation link styles */
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+}
+/* everywhere else */
+* {
+  font-family:'Montserrat', Arial, Helvetica, sans-serif;
+  background-color: #44158F;
+}
