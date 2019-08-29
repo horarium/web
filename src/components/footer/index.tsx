@@ -4,7 +4,7 @@ import './footer.css'
 export default function Footer() {
     return (
         <div className="footer">
-            <p>&copy; horarium 2019. All rights reserved.</p>
+            <p>&copy; horarium {(new Date().getFullYear())}. All rights reserved.</p>
         </div>
     )
 }
