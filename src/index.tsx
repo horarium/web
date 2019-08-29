@@ -1,18 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Hero from './components/hero'
-import Navbar from './components/navbar'
-import Footer from './components/footer';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from './components/home'
+import Docs from './components/docs';
+import Navbar from './components/navbar';
 import './style.css'
+import Footer from './components/footer';
 
-function App() {
+const AppRouter: React.FunctionComponent = () => {
   return (
     <div className="container">
-      <Navbar />
-      <Hero />
+      <Router>
+        <Navbar />
+        <Route exact path="/" component={Home} />
+        <Route path="/docs" component={Docs} />
+      </Router>
       <Footer />
     </div>
+
   )
 }
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(<AppRouter />, document.getElementById('root'))

@@ -1,11 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Logo from './logo.svg'
 import './navbar.css'
 
-export default function Navbar() {
+
+const Navbar = () => {
     return (
-        <nav className="navbar">
-            <img src={Logo} className="logo" alt="logo" />
-        </nav>
+        <div className="navbar">
+            <Link to="/">
+                <img src={Logo} className="logo" alt="logo" />
+            </Link>
+            <nav>
+                <Link to="/docs">Docs</Link>
+            </nav>
+        </div>
     )
 }
+
+export default Navbar

@@ -5,7 +5,8 @@ module.exports = {
     entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -15,9 +16,12 @@ module.exports = {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
                     'file-loader'
-                ]
-            }
-        ]
+                ],
+            },
+        ],
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     mode: 'development',
     plugins: [
