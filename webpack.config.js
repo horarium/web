@@ -2,14 +2,14 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.jsx',
+    entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js'
     },
     module: {
         rules: [
-            { test: /\.(js|jsx)$/, use: 'babel-loader' },
+            { test: /\.(ts|js)x?$/, use: 'babel-loader' },
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
             {
                 test: /\.(png|svg|jpg|gif)$/,
@@ -27,6 +27,6 @@ module.exports = {
         })
     ],
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.tsx']
     }
 }
