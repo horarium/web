@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from './components/home'
 import Docs from './components/docs';
 import Navbar from './components/navbar';
-import './style.css'
 import Footer from './components/footer';
+import Canvas from './components/docs/canvas';
+import './style.css'
+
 
 const AppRouter: React.FunctionComponent = () => {
   return (
@@ -13,11 +15,11 @@ const AppRouter: React.FunctionComponent = () => {
       <Router>
         <Navbar />
         <Route exact path="/" component={Home} />
-        <Route path="/docs" component={Docs} />
+        <Route exact path="/docs" component={Docs}/>
+        <Route path="/docs/canvas" component={Canvas}/>
       </Router>
       <Footer />
     </div>
-
   )
 }
 

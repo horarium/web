@@ -92,8 +92,23 @@ footer {
   display: flex;
 }
 
+.docs-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
 a:first-child {
   margin-right: auto;
+}
+
+a {
+  transition: ease 0.25s;
 }
 
 nav {
@@ -107,6 +122,10 @@ nav a {
 
 nav a:visited, a:link {
   color: white;
+}
+
+nav a:hover {
+  color: #14D9D9;
 }
 
 nav a.active {

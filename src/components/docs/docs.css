@@ -12,3 +12,12 @@
 .title {
     text-align: center;
 }
+
+a {
+    color: #14D9D9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00a7a8;
+}
